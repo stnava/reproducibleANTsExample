@@ -2,12 +2,12 @@ import ants
 
 fi = ants.image_read(ants.get_data("r16"))
 mi = ants.image_read(ants.get_data("r64"))
-tx = "SyN"
-pnum = 1
 tx = "Affine"
 pnum = 0
+tx = "SyN"
+pnum = 1
 metrics = ["MeanSquares", "GC", "Mattes"]
-asr = 0.1
+asr = 1
 for m in range(0, len(metrics)):
     mytx1 = ants.registration(
         fixed=fi,
