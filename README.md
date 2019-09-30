@@ -16,3 +16,17 @@ in R, these will be over-ridden but whatever is set in .Renviron.
 Currently, the mutual information metric is the "most" stochastic.
 
 This is intrinsic to the nature of the metric.
+
+
+to run:
+
+
+```
+export ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS=1
+export ANTS_RANDOM_SEED=1
+cd src
+Rscript reproducible.R
+python3 reproducible.py
+bash reproducible.sh
+```
+
